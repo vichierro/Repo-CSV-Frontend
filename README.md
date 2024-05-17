@@ -42,7 +42,7 @@ Clone este repositório em sua máquina local
 git clone https://github.com/vichierro/Repo-CSV-Frontend.git
 ```
 ## Passo 2: Configurar e Iniciar o Backend
-Antes de iniciar o frontend, é necessário configurar e iniciar o backend conforme descrito no README.md do backend.
+Antes de iniciar o frontend, é necessário configurar e iniciar o backend (em https://github.com/vichierro/Repo-CSV/tree/main) conforme descrito no README.md do backend.
 
 ## Passo 3: Configurar e Iniciar o Frontend
 1. Navegue até a pasta frontend:
