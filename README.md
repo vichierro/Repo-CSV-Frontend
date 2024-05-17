@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Projeto Frontend - FILE_SERVICE e MOCK
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto contém a aplicação frontend para interagir com as APIs `FILE_SERVICE` e `MOCK`. O frontend é desenvolvido em React e fornece uma interface para observar e empregar as funções CRUD.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+- Node.js v18.20.2
+- npm v10.5.0
 
-### `npm start`
+## Verificando a Versão do Node.js
+Se você não tiver a versão correta do Node.js, é recomendável usar o NVM (Node Version Manager) para gerenciar diferentes versões do Node.js. Aqui estão as instruções para instalar e usar o NVM:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Instalando o NVM e Node
+1. Baixe e instale o NVM executando o seguinte comando no terminal:
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+2. Baixe e instale o Node.js na versão adequada
+```
+nvm install 18
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Verifique se a versão adequada foi instalada
+```
+node -v # should print `v18.20.2`
+```
 
-### `npm test`
+5. Se não for `v18.20.2` a versão exibida execute:
+```
+nvm use 18
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. Verifique a versão do npm do seu ambiente:
+```
+npm -v # should print `10.5.0`
+```
+# Configuração do Projeto
+## Passo 1: Clonar o Repositório
+Clone este repositório em sua máquina local
+```
+git clone <repo>
+```
+## Passo 2: Configurar e Iniciar o Backend
+Antes de iniciar o frontend, é necessário configurar e iniciar o backend conforme descrito no README.md do backend.
 
-### `npm run build`
+## Passo 3: Configurar e Iniciar o Frontend
+1. Navegue até a pasta frontend:
+```
+cd frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+2. Instale as dependências:
+```
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+2. Inicie o servidor de desenvolvimento:
+```
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+# Utilizando a Aplicação
+Após iniciar o servidor de desenvolvimento do React, acesse http://localhost:3000 no seu navegador. A partir desta interface, você pode:
+- Observar os dados carregados das APIs `FILE_SERVICE` e `MOCK`.
+- Realizar operações CRUD (Criar, Ler, Atualizar, Deletar) através dos formulários e botões disponíveis na interface.
+- Fazer upload de arquivos CSV e visualizar o processamento e armazenamento dos dados.
 
-### `npm run eject`
+# Fluxo de Dados
+Depois de carregar e interagir com os dados na aplicação frontend, você pode acompanhar as alterações diretamente nos Prisma Studios configurados para `FILE_SERVICE` e `MOCK`:
+- Acesse o Prisma Studio do FILE_SERVICE em http://localhost:5555 (ou a porta configurada).
+- Acesse o Prisma Studio do MOCK em http://localhost:5556 (ou a porta configurada).
+Verifique as tabelas e registros nos bancos de dados para observar as alterações resultantes das operações realizadas através da interface frontend.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
