@@ -37,8 +37,9 @@ npm -v # should print `10.5.0`
 # Configuração do Projeto
 ## Passo 1: Clonar o Repositório
 Clone este repositório em sua máquina local
+
 ```
-git clone <repo>
+git clone https://github.com/vichierro/Repo-CSV-Frontend.git
 ```
 ## Passo 2: Configurar e Iniciar o Backend
 Antes de iniciar o frontend, é necessário configurar e iniciar o backend conforme descrito no README.md do backend.
